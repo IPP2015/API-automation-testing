@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="API automation testing" time="6.399" tests="2" failures="0" errors="0">
+   <testsuite name="API automation testing" tests="2" failures="0" errors="0" time="6.399" skipped="0" timestamp="24-03-2026T19:09:49" hostname="IPP - 192.168.1.37" id="Test Suites/API automation testing">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="D:\\Kerja\\API automation testing\\Reports\\20260324_190940\\API automation testing\\20260324_190940"/>
+         <property name="logFiles" value="D:\\Kerja\\API automation testing\\Reports\\20260324_190940\\API automation testing\\20260324_190940\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="IPP - 192.168.1.37"/>
+         <property name="hostAddress" value="192.168.1.37"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.7.6.223"/>
+      </properties>
+      <testcase name="Test Cases/1 case" time="4.905" classname="Test Cases/1 case" status="PASSED">
+         <system-out><![CDATA[24-03-2026T19:09:49 - [TEST_CASE][PASSED] - Test Cases/1 case: Test Cases/1 case
+
+24-03-2026T19:09:50 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("get case 1")): Send request successfully
+
+24-03-2026T19:09:53 - [MESSAGE][INFO] - HAR: D:\Kerja\API automation testing\Reports\20260324_190940\API automation testing\20260324_190940\requests\main\0.har
+
+24-03-2026T19:09:53 - [MESSAGE][PASSED] - Send request successfully
+
+24-03-2026T19:09:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-03-2026T19:09:53 - [MESSAGE][PASSED] - Verify response status code successfully
+
+24-03-2026T19:09:53 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+24-03-2026T19:09:53 - [TEST_STEP][PASSED] - json = JsonSlurper().parseText(responseBody): null
+
+24-03-2026T19:09:53 - [TEST_STEP][PASSED] - if (!(responseBody) || trim().length() == 0): null
+
+24-03-2026T19:09:53 - [TEST_STEP][PASSED] - else: null
+
+24-03-2026T19:09:53 - [TEST_STEP][PASSED] - println("Response berhasil diterima"): null
+
+24-03-2026T19:09:53 - [TEST_STEP][PASSED] - if (!(json.containsKey("list")) || list.size() == 0): null
+
+24-03-2026T19:09:53 - [TEST_STEP][PASSED] - else: null
+
+24-03-2026T19:09:53 - [TEST_STEP][PASSED] - println(JSON mengandung 'list' dengan $json.list.size() item): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - firstDtTxt = dt_txt: null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - baseDate = LocalDate.parse(firstDtTxt.substring(0, 10), DateTimeFormatter.ofPattern("yyyy-MM-dd")): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - println(Tanggal acuan: $baseDate): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - for ([i = 0, i < 5, (i++)]): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - checkDate = baseDate.plusDays(i): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - println(Perkiraan cuaca untuk tanggal: $checkDate): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - dailyForecasts = list.findAll({ -> ... }): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - if (dailyForecasts.size() == 0): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - dailyForecasts.each({ java.lang.Object forecast -> ... }): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - println("---------------------------------------"): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - checkDate = baseDate.plusDays(i): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - println(Perkiraan cuaca untuk tanggal: $checkDate): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - dailyForecasts = list.findAll({ -> ... }): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - if (dailyForecasts.size() == 0): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - dailyForecasts.each({ java.lang.Object forecast -> ... }): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - println("---------------------------------------"): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - checkDate = baseDate.plusDays(i): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - println(Perkiraan cuaca untuk tanggal: $checkDate): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - dailyForecasts = list.findAll({ -> ... }): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - if (dailyForecasts.size() == 0): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - dailyForecasts.each({ java.lang.Object forecast -> ... }): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - println("---------------------------------------"): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - checkDate = baseDate.plusDays(i): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - println(Perkiraan cuaca untuk tanggal: $checkDate): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - dailyForecasts = list.findAll({ -> ... }): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - if (dailyForecasts.size() == 0): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - dailyForecasts.each({ java.lang.Object forecast -> ... }): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - println("---------------------------------------"): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - checkDate = baseDate.plusDays(i): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - println(Perkiraan cuaca untuk tanggal: $checkDate): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - dailyForecasts = list.findAll({ -> ... }): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - if (dailyForecasts.size() == 0): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - dailyForecasts.each({ java.lang.Object forecast -> ... }): null
+
+24-03-2026T19:09:54 - [TEST_STEP][PASSED] - println("---------------------------------------"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/2 case" time="0.849" classname="Test Cases/2 case" status="PASSED">
+         <system-out><![CDATA[24-03-2026T19:09:54 - [TEST_CASE][PASSED] - Test Cases/2 case: Test Cases/2 case
+
+24-03-2026T19:09:55 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("get case 2")): Send request successfully
+
+24-03-2026T19:09:55 - [MESSAGE][INFO] - HAR: D:\Kerja\API automation testing\Reports\20260324_190940\API automation testing\20260324_190940\requests\main\1.har
+
+24-03-2026T19:09:55 - [MESSAGE][PASSED] - Send request successfully
+
+24-03-2026T19:09:55 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+24-03-2026T19:09:55 - [MESSAGE][PASSED] - Verify response status code successfully
+
+24-03-2026T19:09:55 - [TEST_STEP][PASSED] - responseBody = response.getResponseBodyContent(): null
+
+24-03-2026T19:09:55 - [TEST_STEP][PASSED] - if (!(responseBody)): null
+
+24-03-2026T19:09:55 - [TEST_STEP][PASSED] - else: null
+
+24-03-2026T19:09:55 - [TEST_STEP][PASSED] - println("Response berhasil diterima"): null
+
+24-03-2026T19:09:55 - [TEST_STEP][PASSED] - json = JsonSlurper().parseText(responseBody): null
+
+24-03-2026T19:09:55 - [TEST_STEP][PASSED] - if (!(list) || list.size() == 0): null
+
+24-03-2026T19:09:55 - [TEST_STEP][PASSED] - else: null
+
+24-03-2026T19:09:55 - [TEST_STEP][PASSED] - println('list' berisi $json.list.size() item): null
+
+24-03-2026T19:09:55 - [TEST_STEP][PASSED] - list.each({ java.lang.Object item -> ... }): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[24-03-2026T19:09:49 - [TEST_SUITE][PASSED] - API automation testing: Test Cases/2 case]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

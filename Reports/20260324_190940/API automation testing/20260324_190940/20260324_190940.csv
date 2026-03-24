@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+API automation testing,,"Get 5 day weather forecast of Jakarta Selatan
+Get current air pollution of Jakarta Selatan",,24-03-2026 19:09:49,24-03-2026 19:09:55,6.399s,PASSED
+,,,,,,,
+Test Cases/1 case,,Get 5 day weather forecast of Jakarta Selatan,,24-03-2026 19:09:49,24-03-2026 19:09:54,4.905s,PASSED
+"response = sendRequest(findTestObject(""get case 1""))",,,,24-03-2026 19:09:50,24-03-2026 19:09:53,2.859s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,24-03-2026 19:09:53,24-03-2026 19:09:53,0.074s,PASSED
+responseBody = response.getResponseBodyContent(),,,,24-03-2026 19:09:53,24-03-2026 19:09:53,0.033s,PASSED
+json = JsonSlurper().parseText(responseBody),,,,24-03-2026 19:09:53,24-03-2026 19:09:53,0.079s,PASSED
+if (!(responseBody) || trim().length() == 0),,,,24-03-2026 19:09:53,24-03-2026 19:09:53,0.017s,PASSED
+else,,,,24-03-2026 19:09:53,24-03-2026 19:09:53,0.028s,PASSED
+"if (!(json.containsKey(""list"")) || list.size() == 0)",,,,24-03-2026 19:09:53,24-03-2026 19:09:53,0.061s,PASSED
+else,,,,24-03-2026 19:09:53,24-03-2026 19:09:54,0.128s,PASSED
+firstDtTxt = dt_txt,,,,24-03-2026 19:09:54,24-03-2026 19:09:54,0.033s,PASSED
+"baseDate = LocalDate.parse(firstDtTxt.substring(0, 10), DateTimeFormatter.ofPattern(""yyyy-MM-dd""))",,,,24-03-2026 19:09:54,24-03-2026 19:09:54,0.086s,PASSED
+println(Tanggal acuan: $baseDate),,,,24-03-2026 19:09:54,24-03-2026 19:09:54,0.000s,PASSED
+"for ([i = 0, i < 5, (i++)])",,,,24-03-2026 19:09:54,24-03-2026 19:09:54,0.419s,PASSED
+,,,,,,,
+Test Cases/2 case,,,,24-03-2026 19:09:54,24-03-2026 19:09:55,0.849s,PASSED
+"response = sendRequest(findTestObject(""get case 2""))",,,,24-03-2026 19:09:55,24-03-2026 19:09:55,0.103s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,24-03-2026 19:09:55,24-03-2026 19:09:55,0.018s,PASSED
+responseBody = response.getResponseBodyContent(),,,,24-03-2026 19:09:55,24-03-2026 19:09:55,0.003s,PASSED
+if (!(responseBody)),,,,24-03-2026 19:09:55,24-03-2026 19:09:55,0.004s,PASSED
+else,,,,24-03-2026 19:09:55,24-03-2026 19:09:55,0.015s,PASSED
+json = JsonSlurper().parseText(responseBody),,,,24-03-2026 19:09:55,24-03-2026 19:09:55,0.017s,PASSED
+if (!(list) || list.size() == 0),,,,24-03-2026 19:09:55,24-03-2026 19:09:55,0.008s,PASSED
+else,,,,24-03-2026 19:09:55,24-03-2026 19:09:55,0.060s,PASSED
+list.each({ java.lang.Object item -> ... }),,,,24-03-2026 19:09:55,24-03-2026 19:09:55,0.029s,PASSED

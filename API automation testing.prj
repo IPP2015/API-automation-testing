@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+   <description>APi nya belum tersedia dan membuat katalon nya &#xd;
+</description>
+   <name>API automation testing</name>
+   <tag></tag>
+   <UUID>9e5d96e0-f53a-409c-97b0-a968ed406d8b</UUID>
+   <createdEdition>FREE</createdEdition>
+   <createdVersion>9.7.6</createdVersion>
+   <freeLicense>true</freeLicense>
+   <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>FREE</modifiedEdition>
+   <modifiedVersion>9.7.6</modifiedVersion>
+   <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>D:\Kerja\API automation testing\API automation testing.prj</projectFileLocation>
+   <sourceContent>
+      <sourceFolderList>
+         <sourceFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </sourceFolderConfiguration>
+      </sourceFolderList>
+      <systemFolderList>
+         <systemFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </systemFolderConfiguration>
+         <systemFolderConfiguration>
+            <url>Include/features</url>
+         </systemFolderConfiguration>
+         <systemFolderConfiguration>
+            <url>Include/config</url>
+         </systemFolderConfiguration>
+      </systemFolderList>
+   </sourceContent>
+   <timeStampInProperties>false</timeStampInProperties>
+   <type>WEBSERVICE</type>
+</Project>
