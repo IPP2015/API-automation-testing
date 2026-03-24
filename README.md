@@ -45,3 +45,6 @@ Catatan Penting
 Gunakan profil environment yang sesuai
 Semua fungsi tambahan ada di folder Libs
 Pastikan semua plugin atau library Katalon yang dibutuhkan sudah terpasang
+test case untuk kode automation case 1 dan case 2
+test suites untuk kumpulan test case
+reports untuk hasil tesr suites
