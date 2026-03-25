@@ -24,9 +24,6 @@ Cara Pakai
 atau di github
 
 1. Buka halaman repository di GitHub
-
-Misalnya repo kamu:
-
 https://github.com/IPP2015/API-automation-testing
 2. Klik tombol Code
 Tombol ini biasanya berwarna hijau di sebelah kanan atas daftar file repo
